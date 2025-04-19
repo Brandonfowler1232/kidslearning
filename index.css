@@ -1,130 +1,51 @@
-/* Reset some default browser styles */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-/* font and background of the main page */
 body {
-  font-family: "Orbitron", sans-serif;
-  color: #ffffff;
-  line-height: 1.8;
-  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
-    url("Index_backg.png");
-  background-size: cover; /* Ensures the background image covers the entire viewport */
-  background-attachment: fixed; /* Keeps the background fixed during scroll */
-  background-repeat: no-repeat;
-  background-position: center;
-  padding: 40x 20px;
-  height: 100vh; /* Ensures the body takes up the full viewport height */
-  margin: 0; /* Removes any default margin that might cause issues */
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh; /* Ensures the body takes up the full viewport height */
-  margin: 0; /* Removes default margin */
-}
-
-/* Example container styling */
-.container {
-  max-width: 800px;
-  margin: 0 auto;
-  padding: 20px;
-}
-/* Example section styling */
-section {
-  margin-bottom: 30px;
-}
-
-/* Example header styling */
-header {
-  background: rgba(0, 0, 0, 0.7); /* Semi-transparent black background */
-  color: white;
-  padding: 10px 20px;
-  text-align: center;
-}
-
-.navbar {
-  background: rgba(98, 61, 61, 0.7); /* Semi-transparent background */
-  padding: 1px 2px;
-  display: flex; /* Use Flexbox to align items horizontally */
-  justify-content: center; /* Center the links horizontally */
-}
-
-.navbar ul {
-  list-style: none; /* Remove default list styling */
-  display: flex; /* Display list items in a row */
-  gap: 20px; /* Add spacing between links */
-  padding: 0;
-  margin: 0;
-}
-
-.navbar li {
-  margin: 0; /* Remove extra margin */
-}
-
-.navbar a {
-  text-decoration: none; /* Remove underline from links */
-  color: white; /* Set link color */
-  font-weight: bold; /* Make text bold */
-  padding: 5px 10px; /* Add padding around links */
-  border-radius: 5px; /* Add rounded corners */
-  transition: background-color 0.3s ease; /* Smooth hover effect */
-}
-
-.navbar a:hover {
-  background-color: #555; /* Change background on hover */
-  color: #ffcc00; /* Change text color on hover */
-}
-
-h1 {
-  font-family: "Orbitron", sans-serif;
-  font-size: 2em;
-  text-align: center;
-  margin-bottom: 2px;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px #13c5e4, 0 0 20px #1e3c72;
-  color: #a969db; /* Gold color for headers */
-}
-h2,
-h3 {
-  font-family: "Orbitron", sans-serif;
-  font-size: 1.5em;
-  text-align: center;
-  margin-bottom: 12px;
-  letter-spacing: 2px;
-  text-shadow: 0 0 10px #13c5e4, 0 0 20px #1e3c72;
-  color: #ffc107; /* Gold color for headers */
-}
-p {
-  font-size: 1em;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #ffffff;
-  text-shadow: 0 0 10px #13c5e4, 0 0 20px #1e3c72;
-}
-
-/* Example button styling */
-button {
-  background: #4caf50;
-  color: white;
-  border: none;
-  padding: 10px 15px;
-  cursor: pointer;
-  border-radius: 5px;
-}
-
-button:hover {
-  background: #45a049;
+  background-image: url("index_backg.png");
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 .wrapper {
-  flex: 1; /* Makes the wrapper take up all available space */
+  font-family: "audiowide", cursive;
+  color: #a084e8;
+  text-align: center;
+  margin-top: 10px;
 }
 
-footer {
-  background: rgba(0, 0, 0, 0.7); /* Optional: style the footer */
-  color: white;
-  text-align: center;
+.wrapper h1 {
+  font-family: "audiowide", cursive;
+  font-size: 30px;
+}
+
+.wrapper p {
+  font-size: 20px;
+  color: #d5ffe4;
+  font-family: "audiowide", cursive;
+}
+
+nav.navbar ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+nav.navbar li {
+  margin: 0 20px;
+}
+
+nav.navbar a {
+  font-family: "audiowide", cursive;
+  background-color: #5d3fd3;
+  color: #f8f8ff;
   padding: 10px 20px;
+  border-radius: 7px;
+  text-decoration: none;
+  font-size: 20px;
+  transition: background-color 0.3s ease;
+  display: inline-block;
+}
+
+nav.navbar a:hover {
+  background-color: #a084e8;
+  transform: scale(1.1);
 }
