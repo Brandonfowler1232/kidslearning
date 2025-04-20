@@ -171,3 +171,58 @@ html {
     margin-bottom: 2rem;
     font-size: 1.8em;
 }
+
+/* Mobile Responsive Styles */
+@media screen and (max-width: 768px) {
+    .wrapper h1 {
+        font-size: 2em;
+    }
+
+    .wrapper p {
+        font-size: 1.4em;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-card {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .stats-container {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+    }
+
+    .back-button {
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+}
+
+/* Small phones */
+@media screen and (max-width: 480px) {
+    .wrapper {
+        padding: 10px;
+    }
+
+    .stats-section {
+        padding: 1rem;
+    }
+
+    .stat-item {
+        font-size: 0.9em;
+    }
+
+    .recommendations {
+        padding: 1rem;
+    }
+}
+
+/* Add padding to wrapper to prevent overlap */
+.wrapper {
+    padding-top: 70px;
+}
