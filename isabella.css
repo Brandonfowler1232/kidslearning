@@ -38,6 +38,8 @@ body {
   text-shadow: 1px 1px 3px #000;
 }
 
+.wrapper 
+
 /* 🚀 Menu Buttons */
 .menu {
   display: flex;
@@ -129,4 +131,38 @@ body {
 @keyframes fadeIn {
   from { opacity: 0; }
   to { opacity: 1; }
+}
+
+.back-button {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  background-color: #5d3fd3;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 25px;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 1.1em;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+  z-index: 1000;
+}
+
+.back-button:hover {
+  background-color: #7a5fd3;
+  transform: translateX(-5px);
+}
+
+.back-button i {
+  font-size: 1.2em;
+}
+
+.view-title {
+  text-align: center;
+  color: #5d3fd3;
+  margin-bottom: 2rem;
+  font-size: 1.8em;
 }
