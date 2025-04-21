@@ -27,14 +27,15 @@ body {
     text-align: center;
 }
 
+
 .menu {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 20px; 
     padding: 10px;
     text-align: center;
-    font-family: "audiowide", cursive;
+    font-family: "audiowide";
 }
 .menu a {
     background-color: #5d3fd3;
@@ -42,7 +43,7 @@ body {
     padding: 15px 25px;
     border-radius: 15px;
     text-decoration: none;
-    font-family: "audiowide", cursive;
+    font-family: "audiowide";
     ;
     font-size: 1.2em;
     transition: transform 0.2s ease, background-color 0.3s ease;
@@ -202,6 +203,12 @@ html {
         font-size: 1em;
     }
 }
+body{
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+
+  }
 
 /* Small phones */
 @media screen and (max-width: 480px) {
@@ -221,6 +228,11 @@ html {
         padding: 1rem;
     }
 }
+body {
+    background-size: cover;
+    background-position: center center;
+    background-attachment: scroll;
+  }
 
 /* Add padding to wrapper to prevent overlap */
 .wrapper {
